@@ -2,12 +2,12 @@
   display: inline-block;
   margin-right: 10px;
   fill: currentColor;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.header-icon:hover,
-.header-icon:focus {
-  color: var(--accent-color);
-}
 .header {
   padding: 24px 0px;
   border-bottom: 1px solid #ececec;
@@ -29,29 +29,12 @@
   align-items: center;
   margin-left: auto;
 }
-
 .logo-header {
   margin-right: 92px;
-  letter-spacing: 0.03em;
 }
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
-
-a.logo-link {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  font-style: normal;
-  text-decoration: none;
-  color: #212121;
-}
-.logo-accent {
-  color: var(--accent-color);
-}
-
 .menu-link {
   padding: 32px 0px;
   font-family: var(--main-font);
@@ -61,13 +44,11 @@ a.logo-link {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .menu .link.current {
@@ -100,14 +81,13 @@ a.logo-link {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   margin-right: 50px;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.office-link:hover,
-.office-link:focus {
-  color: var(--accent-color);
-}
 .tel-link {
   display: flex;
   align-items: center;
@@ -117,11 +97,9 @@ a.logo-link {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tel-link:hover,
-.tel-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
