@@ -32,9 +32,12 @@
 .logo-header {
   margin-right: 92px;
 }
-.menu-item:not(:last-child) {
-  margin-right: 50px;
+.menu-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
+
 .menu-link {
   padding: 32px 0px;
   font-family: var(--main-font);
@@ -49,26 +52,26 @@
   &:focus {
     color: var(--accent-color);
   }
+  &.current {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 1px;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+  }
 }
 
 .menu .link.current {
   color: var(--accent-color);
-}
-
-.menu-link.current {
-  position: relative;
-}
-.menu-link.current::after {
-  position: absolute;
-  bottom: 1px;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  margin: 0 auto;
-  overflow: hidden;
 }
 
 .office-link {

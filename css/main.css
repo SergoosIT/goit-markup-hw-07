@@ -356,15 +356,9 @@ body {
 .menu-link:hover, .menu-link:focus {
   color: var(--accent-color);
 }
-
-.menu .link.current {
-  color: var(--accent-color);
-}
-
 .menu-link.current {
   position: relative;
 }
-
 .menu-link.current::after {
   position: absolute;
   bottom: 1px;
@@ -376,6 +370,10 @@ body {
   border-radius: 2px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.menu .link.current {
+  color: var(--accent-color);
 }
 
 .office-link {
