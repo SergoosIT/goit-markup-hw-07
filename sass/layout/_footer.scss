@@ -1,4 +1,4 @@
-.section-footer {
+.footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,11 +10,11 @@
   display: flex;
   flex-direction: column;
 }
-.section-footer-conteiner {
+.footer-conteiner {
   display: flex;
 }
 
-a .adress-list {
+a .footer-contakt__list {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
@@ -22,11 +22,37 @@ a .adress-list {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.adress-link {
+a.footer-contakt__link {
+  width: 231px;
+  height: 21px;
   font-family: var(--main-font);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+.footer__logo {
+  display: block;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.footer-contakt__link-address {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--white-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -35,39 +61,12 @@ a .adress-list {
     color: var(--accent-color);
   }
 }
-a.footer-logo {
-  display: block;
-  color: var(--white-color);
-  margin-bottom: 20px;
-  padding: 0px;
-}
-.contakt {
-  width: 231px;
-  height: 21px;
-  color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-
-.adress .link {
-  width: 231px;
-  height: 21px;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.contakt-item {
+.footer-contakt__item {
   margin-bottom: 9px;
 }
-.footer-title {
+
+.footer-icons__title {
   padding-top: 12px;
   margin-bottom: 20px;
   font-family: var(--main-font);
@@ -83,15 +82,15 @@ a.footer-logo {
   margin-left: 70px;
 }
 
-.footer-item-icon:not(:last-child) {
+.footer-icons__item:not(:last-child) {
   margin-right: 10px;
 }
-.footer-link-icon {
+.footer-icons_link-icon {
   fill: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-list-icon {
+.footer-icons__list {
   display: flex;
 }
 
@@ -108,7 +107,7 @@ a.footer-logo {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .footer-form-input {

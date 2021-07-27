@@ -18,7 +18,7 @@
   overflow: hidden;
 }
 
-a.logo-link {
+.logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -29,7 +29,7 @@ a.logo-link {
   color: var(--title-text-color);
 }
 
-.logo-accent {
+.logo__accent {
   color: var(--accent-color);
 }
 
@@ -189,9 +189,14 @@ a.logo-link {
 .modal-form-checkbox-label {
   display: flex;
   align-items: center;
-  font-size: 12px;
   margin-top: 20px;
   margin-bottom: 30px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
 .modal-form-checkbox-label::before {
   display: block;
@@ -299,12 +304,12 @@ body {
   padding-right: 15px;
 }
 
-.header-icon {
+.contakt__icon {
   display: inline-block;
   margin-right: 10px;
   fill: currentColor;
 }
-.header-icon:hover, .header-icon:focus {
+.contakt__icon:hover, .contakt__icon:focus {
   color: var(--accent-color);
 }
 
@@ -313,7 +318,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header_container {
   display: flex;
   align-items: center;
 }
@@ -328,21 +333,21 @@ body {
   align-items: center;
 }
 
-.contakt-header {
+.contakt {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.logo-header {
+.header__logo {
   margin-right: 92px;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.menu-link {
+.menu__link {
   padding: 32px 0px;
   font-family: var(--main-font);
   font-weight: 500;
@@ -352,13 +357,13 @@ body {
   color: var(--title-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-link:hover, .menu-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
-.menu-link.current {
+.menu__link.current {
   position: relative;
 }
-.menu-link.current::after {
+.menu__link.current::after {
   position: absolute;
   bottom: 1px;
   content: "";
@@ -375,7 +380,7 @@ body {
   color: var(--accent-color);
 }
 
-.office-link {
+.contakt__office-link {
   display: flex;
   align-items: center;
   font-family: var(--main-font);
@@ -387,11 +392,11 @@ body {
   margin-right: 50px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.office-link:hover, .office-link:focus {
+.contakt__office-link:hover, .contakt__office-link:focus {
   color: var(--accent-color);
 }
 
-.tel-link {
+.contakt__tel-link {
   display: flex;
   align-items: center;
   font-family: var(--main-font);
@@ -402,7 +407,7 @@ body {
   color: var(--main-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.tel-link:hover, .tel-link:focus {
+.contakt__tel-link:hover, .contakt__tel-link:focus {
   color: var(--accent-color);
 }
 
@@ -414,13 +419,13 @@ body {
   background-color: #c4c4c4;
 }
 
-.hero-main {
+.hero_main {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   margin-bottom: 30px;
   align-items: center;
@@ -435,7 +440,7 @@ body {
   color: var(--white-color);
 }
 
-.button.service {
+.hero__button.service {
   padding: 10px 32px;
   align-items: center;
   font-family: var(--main-font);
@@ -451,7 +456,7 @@ body {
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button.service:hover, .button.service:focus {
+.hero__button.service:hover, .hero__button.service:focus {
   color: #212121;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -790,7 +795,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-footer {
+.footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -803,11 +808,11 @@ body {
   flex-direction: column;
 }
 
-.section-footer-conteiner {
+.footer-conteiner {
   display: flex;
 }
 
-a .adress-list {
+a .footer-contakt__list {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
@@ -816,51 +821,47 @@ a .adress-list {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.adress-link {
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--white-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.adress-link:focus, .adress-link:hover {
-  color: var(--accent-color);
-}
-
-a.footer-logo {
-  display: block;
-  color: var(--white-color);
-  margin-bottom: 20px;
-  padding: 0px;
-}
-
-.contakt {
-  width: 231px;
-  height: 21px;
-  color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contakt:hover, .contakt:focus {
-  color: var(--accent-color);
-}
-
-.adress .link {
+a.footer-contakt__link {
   width: 231px;
   height: 21px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+a.footer-contakt__link:focus, a.footer-contakt__link:hover {
+  color: var(--accent-color);
 }
 
-.contakt-item {
+.footer__logo {
+  display: block;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.footer-contakt__link-address {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-contakt__link-address:focus, .footer-contakt__link-address:hover {
+  color: var(--accent-color);
+}
+
+.footer-contakt__item {
   margin-bottom: 9px;
 }
 
-.footer-title {
+.footer-icons__title {
   padding-top: 12px;
   margin-bottom: 20px;
   font-family: var(--main-font);
@@ -876,16 +877,16 @@ a.footer-logo {
   margin-left: 70px;
 }
 
-.footer-item-icon:not(:last-child) {
+.footer-icons__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-link-icon {
+.footer-icons_link-icon {
   fill: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-list-icon {
+.footer-icons__list {
   display: flex;
 }
 
@@ -902,7 +903,7 @@ a.footer-logo {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .footer-form-input {

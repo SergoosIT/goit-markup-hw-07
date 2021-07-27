@@ -10,13 +10,13 @@
   background-color: #c4c4c4;
 }
 
-.hero-main {
+.hero_main {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   margin-bottom: 30px;
   align-items: center;
@@ -31,7 +31,7 @@
   color: var(--white-color);
 }
 
-.button.service {
+.hero__button.service {
   padding: 10px 32px;
   align-items: center;
   font-family: var(--main-font);
